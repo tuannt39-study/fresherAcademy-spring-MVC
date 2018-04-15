@@ -12,6 +12,8 @@ public class LoginService {
 	private FresherRepository fresherRepository;
 
 	public boolean login(Fresher fresher) {
-		return fresherRepository.authenticate(fresher);
+		Fresher fresherSaved = fresherRepository.findByUsernameAndPassword(fresher.getUsername(),
+				fresher.getPassword());
+		return (fresherSaved != null);
 	}
 }

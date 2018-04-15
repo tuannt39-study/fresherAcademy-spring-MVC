@@ -12,6 +12,6 @@ public class RegisterService {
 	private FresherRepository fresherRepository;
 
 	public boolean register(Fresher fresher) {
-		return fresherRepository.register(fresher);
+		return (fresherRepository.save(fresher) != null);
 	}
 }
