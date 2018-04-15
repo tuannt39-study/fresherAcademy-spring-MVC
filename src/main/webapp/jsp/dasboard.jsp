@@ -8,6 +8,7 @@
 </head>
 <body>
 	<div align="center">
+		<h1>Hi! ${fresher.username}</h1>
 		<h2>Welcome to Education Dasboard</h2>
 	</div>
 </body>
