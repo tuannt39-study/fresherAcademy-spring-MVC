@@ -9,9 +9,9 @@ public class FresherRepository {
 
 	public boolean authenticate(Fresher fresher) {
 		if (fresher.getUsername().equals(fresher.getPassword())) {
-			return true;
-		} else {
 			return false;
+		} else {
+			return true;
 		}
 	}
 }

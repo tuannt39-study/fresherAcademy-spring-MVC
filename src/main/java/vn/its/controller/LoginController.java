@@ -26,7 +26,8 @@ public class LoginController {
 			model.addAttribute("fresher", fresher);
 			return "dasboard";
 		} else {
-			return "login";
+			model.addAttribute("error", true);
+			return "redirect: login";
 		}
 	}
 }
