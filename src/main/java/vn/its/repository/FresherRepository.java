@@ -14,4 +14,12 @@ public class FresherRepository {
 			return true;
 		}
 	}
+
+	public boolean register(Fresher fresher) {
+		if (fresher.getUsername().equals(fresher.getPassword())) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 }
