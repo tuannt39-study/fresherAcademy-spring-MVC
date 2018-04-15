@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div align="center">
-		<form:form method="POST" modelAttribute="fresher">
+		<form:form action="dasboard" method="POST" modelAttribute="fresher">
 			<table>
 				<tr>
 					<td><form:label path="username">Username</form:label></td>
